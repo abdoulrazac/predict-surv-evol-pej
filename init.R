@@ -5,7 +5,7 @@
 
 
 
-my_packages = c("shiny", "shinydashboard", "shinyWidgets", "dplyr", "plotly", "ggplot2", "ggplotify", "pec",  "shinythemes")
+my_packages = c("shiny", "randomForestSRC", "shinydashboard", "shinyWidgets", "dplyr", "plotly", "ggplot2", "ggplotify", "pec",  "shinythemes")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
