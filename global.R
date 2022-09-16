@@ -12,7 +12,7 @@ library(pec)
 
 
 # Import des données
-readRDS("best_model.rds")
+best_model <- readRDS("best_model.rds")
 fdep <- read.csv2(file = "fdep_commune_data.csv", encoding = "UTF-8") %>% 
   mutate(commune = paste(ID_COMMUNE, NOM_COMMUNE))
 base_prob <- read.csv2("surv_risk.csv", fileEncoding = 'UTF-8')
